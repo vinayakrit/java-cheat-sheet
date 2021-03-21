@@ -42,4 +42,64 @@ Let take a simple example where first cindition is true
   >So here first condition _a++==6_ is false so we moved to second condition but our value increased because we ended with first condition statement now second condition is true and our output will printed as _7_
  
  
+ ## Casting 
+ ```java
+   a=+b;  
+ ```
+ > a = (int) (a + b)
+
+###### Integer/doubles to character
+```java
+char ch = (char) 65.65;
+```
+> Simply this will cast double value to char as per ASCII which is _A_
+
+
+###### Character to integer
+```java
+int i = (int) 'A';
+```
+> Simply this will cast character _A_ to inetger as per ASCII which is 65
+
+
+###### Integer to string
+```java
+int number = 456;
+String str = number + "";
+```
+>This will change integer to string 
+
+
+###### String to integer
+```java
+String str = "456";
+int number = Integer.parseInt(str);
+```
+> This will parse string "456" to an integer value 456
+
  
+## Something about Characters in java
+
+iCheck whether character is type of digit or not
+```java
+Character.isDigit('9');
+```
+Or
+```java
+char ch = '9';
+Character.isDigit(ch);
+```
+>This will return boolean _true_ if ch is digit of character else return _false_
+
+Here are others
+
+Syntax | meaning
+------------ | -------------
+Character.isLetter(ch); |  return boolean _true_ if ch is letter of character else return _false_
+Character.isLetterOrDigit(ch); | return boolean _true_ if ch is letter or digit of character else return _false_
+Character.isLowerCase(ch); | return _true_ if character ch is lower case else _false_
+Character.isUpperCase(ch); | return _true_ if character ch is upper case else _false_
+Character.toLowerCase(ch); | return lower case of character ch
+Character.toUpperCase(ch); | return upper case of character ch
+
+
